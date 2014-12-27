@@ -1,0 +1,6 @@
+# Build and Release Folders
+target/
+
+# Project files, i.e. `.idea` should NOT be excluded 
+# as they contain compiler settings and other important
+# information for Intellij IDEA.

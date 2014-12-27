@@ -1,0 +1,40 @@
+Dado endereço de uma tag via linha de comando:
+ - Criar TAG, se necessário.
+ - Montar artefato.
+ - FTP para o servidor.
+ - Email para goper@riocard.com.
+ - Envia email/notificacao hangout quando aplicação estiver pronta.
+
+Frameworks:
+ - CLI = JCommander
+ - SVN = SVNKIT
+ - FTP = ftp4j
+ - Email - simple-java-mail
+ - Hangout - smack API
+ - Checar aplicação - WebDriver
+
+Uso:
+Uso 0:
+arcade
+***************************************************************************
+
+Uso 1 [TAG já criada]
+| arcade riocardbkf 1.32.1
+***************************************************************************
+
+Uso 2 [Dentro da raiz do working copy]
+| arcade 1.32.1
+
+obs:
+- Será feito o incremento do @ [X.@.XX] da versão atual do POM.xml
+- Será criada com a versão incrementada.
+***************************************************************************
+
+
+Solução:
+Arcade é uma cli que se comunicará com o backend MAME(Multiple Arcade Machine Emulator).
+
+Arcade autentica com MAME e a partir disso ocorrerá comunicação. (SSH fingerprint)
+
+MAME fará autenticação do Arcade e guardará as informações do usuário no primeiro uso.
+
